@@ -3,3 +3,7 @@ Pan de Pandemia is a project with the focus to implement a social network for pe
 
 ## Planning
 Find the link to our [trello board](https://trello.com/b/5fddIb2m/pandepandemia)
+
+## Sketching
+Some UI research made:
+https://dribbble.com/shots/7392923-Bakery-and-Beverages-Mobile-App-Exploration

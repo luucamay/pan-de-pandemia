@@ -1,10 +1,17 @@
-// Este es el punto de entrada de tu aplicacion
-
+const firebase = window.firebase;
 import { myFunction } from './lib/index.js';
 import Router from './router.js';
 import {firebaseConfig} from './lib/firebaseConfig.js';
 
+
 myFunction();
 
-Router.init();
+function bootstrap() {
+    Router.init();
+    firebase.initializeApp(firebaseConfig);
+}
+
+bootstrap();
+
+
 

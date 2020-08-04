@@ -2,6 +2,7 @@ import Home from './views/home.js';
 import Err404 from './views/404.js';
 import Auth from './views/auth.js';
 import Feed from './views/feed.js';
+import Header from './views/components/header.js';
 
 const paths  = {
     '/': Home,
@@ -11,9 +12,9 @@ const paths  = {
 
 const config = async () => {
     const rootElem = document.getElementById('root');
-
     let url = location.hash.slice(1).toLowerCase() || '/';
 
+    rootElem.insertAdjacentHTML('beforebegin', await Header.render());
     let page = paths[url] || Err404;
     rootElem.innerHTML = await page.render();
 }

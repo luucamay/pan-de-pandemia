@@ -2,11 +2,13 @@ import Home from './views/home.js';
 import Err404 from './views/404.js';
 import Auth from './views/auth.js';
 import Feed from './views/feed.js';
+import CreateRecipe from "./views/create-recipe.js";
 
 const paths  = {
     '/': Home,
     '/auth': Auth,
-    '/feed': Feed
+    '/feed': Feed,
+    '/feed/create-recipe': CreateRecipe,
 }
 
 const config = async () => {

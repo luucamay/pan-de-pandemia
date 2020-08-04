@@ -1,14 +1,15 @@
-const firebase = window.firebase;
 import { myFunction } from './lib/index.js';
 import Router from './router.js';
-import {firebaseConfig} from './lib/firebaseConfig.js';
+import {firebase} from "./lib/firebaseConfig.js";
 
 
 myFunction();
 
 function bootstrap() {
+    // TODO: remove this
+    console.log('bootstrap');
     Router.init();
-    firebase.initializeApp(firebaseConfig);
+    firebase.init();
 }
 
 bootstrap();

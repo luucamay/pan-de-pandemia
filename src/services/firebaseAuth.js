@@ -8,4 +8,13 @@ const firebase = window.firebase;
   });
  */
 
-  export const signIn = (email, password) => firebase.auth().signInWithEmailAndPassword(email, password);
+export const signIn = (email, password) =>
+  firebase
+    .auth()
+    .signInWithEmailAndPassword(email, password)
+    .catch(function (error) {
+      // Handle Errors here.
+      var errorCode = error.code;
+      var errorMessage = error.message;
+      console.log(errorMessage);
+    });

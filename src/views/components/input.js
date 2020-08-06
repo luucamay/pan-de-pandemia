@@ -1,10 +1,10 @@
 const Input = {
-    render: async () => {
+    render: async (inputName, type) => {
         const view =  `
-            <section>
-                <h1>Pan de Pandemia</h1>
-            </section>
-        
+            <div class="input">
+                <label for="${inputName}">${inputName}</label>
+                <input type="${type}" id="${inputName}"></input>
+            </div>
         `
         return view
     }

@@ -23,7 +23,7 @@ const config = async () => {
 const Router = {
     init: async () => {
         window.addEventListener('hashchange', config);
-        window.addEventListener('load', config);    
+        window.addEventListener('load', config);
     }
 }
 

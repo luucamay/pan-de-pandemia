@@ -1,11 +1,10 @@
+import Input from 'components/input.js';
+
 const Auth = {
     render: async () => {
-        const view =  `
-            <section>
-                <h1>Bienvenida</h1>
-            </section>
-        
-        `
+        const email = await Input.render('Email', 'text');
+        const password = await Input.render('Contrasenia', 'password');
+        const view =  email + password;
         return view
     }
 }

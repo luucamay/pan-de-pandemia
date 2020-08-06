@@ -1,4 +1,4 @@
-import Input from 'components/input.js';
+import Input from './components/input.js';
 
 const Auth = {
     render: async () => {

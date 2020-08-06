@@ -11,3 +11,5 @@ https://dribbble.com/shots/7392923-Bakery-and-Beverages-Mobile-App-Exploration
 ## Learning Resources
 Single page app inspiration from here: https://github.com/rishavs/vanillajs-spa/blob/master/src/app.js
 
+## Questions
+- Do we need a public folder?

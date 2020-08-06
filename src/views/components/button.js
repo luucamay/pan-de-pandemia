@@ -1,7 +1,7 @@
-const button = {
-    render: async () => {
+const Button = {
+    render: async (text) => {
         const view = `
-            <button></button>
+            <button>${text}</button>
         `
         return view
     }

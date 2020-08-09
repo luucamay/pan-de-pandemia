@@ -18,6 +18,7 @@ const config = async () => {
 
     let page = paths[url] || Err404;
     rootElem.innerHTML = await page.render();
+    await page.after_render();
 }
 
 const Router = {

@@ -9,7 +9,11 @@ Some UI research made:
 https://dribbble.com/shots/7392923-Bakery-and-Beverages-Mobile-App-Exploration
 
 ## Learning Resources
-Single page app inspiration from here: https://github.com/rishavs/vanillajs-spa/blob/master/src/app.js
+- Single page app inspiration from here: https://github.com/rishavs/vanillajs-spa/blob/master/src/app.js
+- Explanation of the above Repository: https://dev.to/rishavs/making-a-single-page-app-in-ye-good-olde-js-es6-3eng
+- A 4 minutes lecture about SPA :) https://javascript.christmas/2019/12
+- SPA routing system: https://medium.com/@bryanmanuele/how-i-implemented-my-own-spa-routing-system-in-vanilla-js-49942e3c4573
+
 
 ## Questions
 - Do we need a public folder?

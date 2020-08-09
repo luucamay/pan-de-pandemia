@@ -4,20 +4,29 @@ import { signIn } from '../services/firebaseAuth.js';
 
 const Auth = {
     render: async () => {
-        const view = document.createElement('div');
         const email = await Input.render('Email', 'text');
         const password = await Input.render('Contrasenia', 'password');
-        const button = await Button.render('Enviar', 'signInBtn');
-        view.innerHTML = email + password + button;
-
-        // Login with access
-        view.querySelector('#signInBtn').addEventListener('click', () => {
-            const email = document.getElementById('email').value;
-            const password = document.getElementById('password').value;
-            signIn(email, password);
-        });
-
+        const signInBtn = await Button.render('Enviar', 'signInBtn');
+        const view = `<form>
+            ${email}
+            ${password}
+            <button id="botoncito">Click here to log in!</button>
+        </form>`;
         return view
+    },
+
+    after_render: async () => {
+        const login = (evt) => {
+            evt.preventDefault();
+            console.log('soy un botoncito');
+            console.log('logueando');
+            /* const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            signIn(email, password); */
+        }
+
+        const botoncito = document.querySelector('#botoncito');
+        botoncito.addEventListener("click", login);
     }
 }
 
